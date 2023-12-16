@@ -16,6 +16,7 @@ Add numbers in the numbers field. Add each number in a new line. There is no lim
 
 ### 4. Run
 Run the `main.py` file.
+An app will open and you insert your message and the image and numbers.
 A chrome browser window will open with a WhatsApp login page. Quickly log in to Whatsapp and sending process will start after a few seconds.
 
 ## Note
