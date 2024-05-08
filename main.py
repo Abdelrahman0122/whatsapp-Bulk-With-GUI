@@ -50,7 +50,7 @@ class SeleniumThread(QThread):
             link = 'https://web.whatsapp.com'
             driver.get(link)
             wait = WebDriverWait(driver, login_time)
-            wait.until(EC.presence_of_element_located((By.CLASS_NAME, '_3WByx')))
+            wait.until(EC.presence_of_element_located((By.CLASS_NAME, '_ak0w')))
            # print("logged in")
 
             # Loop Through Numbers List
@@ -65,9 +65,9 @@ class SeleniumThread(QThread):
                 #print(f"Opened the chat for number: {num}")
                 time.sleep(2)
                 try:
-                    wait.until(EC.presence_of_element_located((By.CLASS_NAME, '_3E8Fg')))
+                    wait.until(EC.presence_of_element_located((By.CLASS_NAME, '_ak1q')))
                    # print("Found the chatbox")
-                    driver.execute_script("document.querySelector('div._3Uu1_').focus();")
+                    driver.execute_script("document.querySelector('div._ak1l').focus();")
                     time.sleep(2)
                    # print("Focused on the chatbox")
 
@@ -83,7 +83,7 @@ class SeleniumThread(QThread):
                         msg_input = None
                         while msg_input is None:
                             try:
-                                msg_input = driver.find_elements(By.CSS_SELECTOR, '._2UNQo input')[1]
+                                msg_input = driver.find_elements(By.CSS_SELECTOR, '._aj-rxs83m0k input')[1]
                             except IndexError:
                                 pass
                             time.sleep(1)
